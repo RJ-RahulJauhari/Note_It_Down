@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundColour"
+    tools:context=".Activity.LoginActivity">
+
+    <EditText
+        android:id="@+id/EmailAddress_Login"
+        android:layout_width="@dimen/_200mdp"
+        android:layout_height="@dimen/_40mdp"
+        android:layout_margin="@dimen/_5mdp"
+        android:background="@drawable/form_field_background"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="@dimen/_15mdp"
+        android:textColor="@color/TextColor"
+        android:textColorHint="@color/IconColor"
+        app:layout_constraintBottom_toTopOf="@+id/Password_Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginText" />
+
+    <EditText
+        android:id="@+id/Password_Login"
+        android:layout_width="@dimen/_200mdp"
+        android:layout_height="@dimen/_40mdp"
+        android:layout_margin="@dimen/_5mdp"
+        android:background="@drawable/form_field_background"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="@dimen/_15mdp"
+        android:textColor="@color/TextColor"
+        android:textColorHint="@color/IconColor"
+        app:layout_constraintBottom_toTopOf="@+id/SignInButton_Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailAddress_Login" />
+
+    <Button
+        android:id="@+id/SignInButton_Login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15mdp"
+        android:text="Sign In"
+        app:layout_constraintBottom_toTopOf="@+id/NoLoginButton_Login"
+        app:layout_constraintEnd_toEndOf="@+id/Password_Login"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/Password_Login"
+        app:layout_constraintTop_toBottomOf="@+id/Password_Login" />
+
+    <ImageView
+        android:id="@+id/icon_imageview"
+        android:layout_width="@dimen/_175mdp"
+        android:layout_height="@dimen/_175mdp"
+        android:layout_margin="@dimen/_5mdp"
+        android:src="@drawable/logonobackground"
+        app:layout_constraintBottom_toTopOf="@+id/LoginText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/LoginText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5mdp"
+        android:layout_marginBottom="@dimen/_5mdp"
+        android:gravity="center"
+        android:text="Sign In into your account"
+        android:textSize="@dimen/_20mdp"
+        app:layout_constraintBottom_toTopOf="@+id/EmailAddress_Login"
+        app:layout_constraintEnd_toEndOf="@+id/EmailAddress_Login"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/EmailAddress_Login"
+        app:layout_constraintTop_toBottomOf="@+id/icon_imageview" />
+
+    <TextView
+        android:id="@+id/NoLoginButton_Login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15mdp"
+        android:gravity="center"
+        android:text="Continue without SignIn/SignUp  "
+        android:textSize="@dimen/_14font_mdp"
+        app:layout_constraintEnd_toStartOf="@+id/NoSignInIcon_Login"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15mdp"
+        android:text="Don't have an account?  "
+        android:textSize="@dimen/_15mdp"
+        app:layout_constraintEnd_toStartOf="@+id/sign_up_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/SignInButton_Login"
+        app:layout_constraintTop_toBottomOf="@+id/SignInButton_Login" />
+
+    <TextView
+        android:id="@+id/sign_up_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/IconColor"
+        android:textSize="@dimen/_15mdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/SignInButton_Login"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/NoSignInIcon_Login"
+        android:layout_width="@dimen/_30mdp"
+        android:layout_height="@dimen/_30mdp"
+        android:src="@drawable/right_arrow_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/NoLoginButton_Login"
+        app:layout_constraintEnd_toEndOf="@+id/sign_up_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/NoLoginButton_Login"
+        app:layout_constraintTop_toTopOf="@+id/NoLoginButton_Login" />
+</androidx.constraintlayout.widget.ConstraintLayout>

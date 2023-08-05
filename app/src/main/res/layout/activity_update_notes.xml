@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/BackgroundColour"
+    android:padding="@dimen/_8mdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.UpdateNotesActivity">
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/UpdateButton_UpdateNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/done_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/nestedScrollView1"
+        app:layout_constraintEnd_toEndOf="@+id/nestedScrollView1"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include layout="@layout/line"></include>
+
+            <EditText
+                android:id="@+id/Title_UpdateNotes"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8mdp"
+                android:ems="10"
+                android:hint="Title"
+                android:inputType="textPersonName"
+                android:lines="@android:integer/config_longAnimTime"
+                android:textColorHint="@color/TextColor"
+                android:textSize="@dimen/_16font_mdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/Subtitle_UpdateNotes"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Subtitle"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/_14font_mdp"></EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40mdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_20mdp"
+                    android:padding="@dimen/_2mdp"
+                    android:text="Priority"
+                    android:textColor="@color/TextColor"
+                    android:textSize="@dimen/_12font_mdp"></TextView>
+
+                <ImageView
+                    android:id="@+id/red_high_priority_option_UpdateNotes"
+                    android:layout_width="@dimen/_20mdp"
+                    android:layout_height="@dimen/_20mdp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_10mdp"
+                    android:background="@drawable/red_circle"></ImageView>
+
+                <ImageView
+                    android:id="@+id/yellow_medium_priority_option_UpdateNotes"
+                    android:layout_width="@dimen/_20mdp"
+                    android:layout_height="@dimen/_20mdp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_10mdp"
+                    android:background="@drawable/yellow_circle"></ImageView>
+
+                <ImageView
+                    android:id="@+id/green_low_priority_option_UpdateNotes"
+                    android:layout_width="@dimen/_20mdp"
+                    android:layout_height="@dimen/_20mdp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_10mdp"
+                    android:background="@drawable/green_circle"></ImageView>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/Note_UpdateNotes"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/note_bg"
+                android:gravity="top"
+                android:hint="Enter your note here"
+                android:padding="@dimen/_2mdp"
+                android:textColor="@color/TextColor"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/_14font_mdp"></EditText>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/nestedScrollView1"
+        app:layout_constraintEnd_toStartOf="@+id/UpdateButton_UpdateNotes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/UpdateButton_UpdateNotes">
+
+        <ImageView
+            android:id="@+id/DeleteButton_UpdateNotes"
+            android:layout_width="@dimen/_40mdp"
+            android:layout_height="@dimen/_40mdp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/delete_icon"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="682dp"></ImageView>
+        <ImageView
+            android:id="@+id/ShareButton_UpdateNotes"
+            android:layout_width="@dimen/_40mdp"
+            android:layout_height="@dimen/_40mdp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/share_icon"></ImageView>
+
+        <ImageView
+            android:id="@+id/AddPhotoButton_UpdateNotes"
+            android:layout_width="@dimen/_40mdp"
+            android:layout_height="@dimen/_40mdp"
+            android:layout_marginStart="@dimen/_5mdp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/add_photo_icon"></ImageView>
+
+        <ImageView
+            android:id="@+id/OCRCameraCaptureButton_UpdateNotes"
+            android:layout_width="@dimen/_40mdp"
+            android:layout_height="@dimen/_40mdp"
+            android:layout_marginStart="@dimen/_5mdp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ocr_icon"></ImageView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

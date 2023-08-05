@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "631286124583",
+    "project_id": "note-it-down-70e22",
+    "storage_bucket": "note-it-down-70e22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631286124583:android:ff72cdb65f52c2c3bdbe02",
+        "android_client_info": {
+          "package_name": "com.example.noteitdown"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "631286124583-gk2u4buqc0m6hlrggr1v1ipdhh50hnv7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlIRE8iwKChUZN0EWWrbFqBDlWAMYfDg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "631286124583-gk2u4buqc0m6hlrggr1v1ipdhh50hnv7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

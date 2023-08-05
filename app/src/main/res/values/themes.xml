@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NoteItDown" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/BackgroundColour</item>
+        <item name="colorPrimaryVariant">@color/BackgroundColour</item>
+        <item name="colorOnPrimary">@color/TextColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="materialButtonStyle">@style/ButtonStyle</item>
+        <item name="fontFamily">@font/roboto_condensed_bold</item>
+        <item name="android:textColor">@color/TextColor</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/_12font_mdp</item>
+        <item name="android:padding">@dimen/_5mdp</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:textColor">@color/BackgroundColour</item>
+    </style>
+
+    <style name="TextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/TextColor</item>
+        <item name="android:textSize">@dimen/_12font_mdp</item>
+    </style>
+
+    <style name="FilterSetStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:state_pressed">true</item>
+        <item name="android:textColor">@color/BackgroundColour</item>
+        <item name="background">@drawable/item_not_selected</item>
+    </style>
+
+    <style name="FilterNotSetStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:state_pressed">false</item>
+        <item name="android:textColor">@color/IconColor</item>
+        <item name="background">@drawable/item_not_selected</item>
+    </style>
+
+</resources>

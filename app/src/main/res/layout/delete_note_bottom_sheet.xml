@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_design"
+    android:background="@drawable/bottom_sheet_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/_100mdp"
+            android:layout_height="@dimen/_6mdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_5mdp"
+            android:background="@drawable/bottom_sheet_tab"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="@dimen/_200mdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_7mdp"
+            android:gravity="center_horizontal"
+            android:text="Are you sure you want to Delete this Note?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12font_mdp"></TextView>
+
+        <Button
+            android:id="@+id/yes_delete_button"
+            android:layout_width="@dimen/_250mdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_5mdp"
+            android:background="@drawable/yes_delete"
+            android:gravity="center"
+            android:text="Yes"
+            android:textColor="@color/BackgroundColour"></Button>
+
+        <Button
+            android:id="@+id/no_delete_button"
+            android:layout_width="@dimen/_250mdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_5mdp"
+            android:layout_marginBottom="@dimen/_10mdp"
+            android:background="@drawable/yes_delete"
+            android:gravity="center"
+            android:text="NO"></Button>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
